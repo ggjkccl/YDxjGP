@@ -418,6 +418,36 @@
 </head>
 <body>
 
+<div id="applicationModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:99999; align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#fff; width:100%; max-width:500px; border-radius:24px; padding:35px; position:relative;">
+    <button onclick="closeModal()" style="position:absolute; right:18px; top:18px; border:none; background:none; font-size:28px; cursor:pointer;">×</button>
+
+    <h2 style="font-size:32px; margin-bottom:12px; color:#0f172a;">Apply For Position</h2>
+
+    <p style="color:#6b7280; margin-bottom:28px;">
+      Complete the quick application form and continue to WhatsApp.
+    </p>
+
+    <form onsubmit="submitApplication(event)">
+      <div style="margin-bottom:18px;">
+        <input type="text" placeholder="Full Name" required style="width:100%; padding:16px; border:1px solid #d1d5db; border-radius:12px; font-size:15px;">
+      </div>
+
+      <div style="margin-bottom:18px;">
+        <input type="number" placeholder="Age" required style="width:100%; padding:16px; border:1px solid #d1d5db; border-radius:12px; font-size:15px;">
+      </div>
+
+      <div style="margin-bottom:18px;">
+        <textarea placeholder="Work Experience" required style="width:100%; min-height:120px; padding:16px; border:1px solid #d1d5db; border-radius:12px; font-size:15px; resize:none;"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Continue Application
+      </button>
+    </form>
+  </div>
+</div>
+
 <header>
   <div class="container nav">
     <div class="logo">Homehubremote</div>
@@ -428,7 +458,7 @@
       <a href="#steps">How It Works</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
-      <a href="https://wa.me/6588888888" class="btn">Apply For Position</a>
+      <a href="javascript:void(0)" onclick="openModal()" class="btn">Apply For Position</a>
     </div>
   </div>
 </header>
@@ -451,7 +481,7 @@
         Discover flexible work from home opportunities with trusted companies hiring in Singapore. Apply online and connect directly through WhatsApp.
       </p>
 
-      <a href="https://wa.me/6588888888" class="btn">
+      <a href="javascript:void(0)" onclick="openModal()" class="btn">
         Apply For Position
       </a>
     </div>
@@ -482,7 +512,7 @@
         </div>
       </div>
 
-      <a href="https://wa.me/6588888888" class="submit-btn" style="display:block; text-align:center; text-decoration:none; margin-top:28px;">
+      <a href="javascript:void(0)" onclick="openModal()" class="submit-btn" style="display:block; text-align:center; text-decoration:none; margin-top:28px;">
         Apply For Position
       </a>
     </div>
@@ -510,7 +540,7 @@
           <li>Flexible working hours</li>
           <li>Training provided</li>
         </ul>
-        <a href="https://wa.me/6588888888" class="btn">Apply For Position</a>
+        <a href="javascript:void(0)" onclick="openModal()" class="btn">Apply For Position</a>
       </div>
 
       <div class="job-card">
@@ -521,7 +551,7 @@
           <li>Remote admin support</li>
           <li>Work from home</li>
         </ul>
-        <a href="https://wa.me/6588888888" class="btn">Apply For Position</a>
+        <a href="javascript:void(0)" onclick="openModal()" class="btn">Apply For Position</a>
       </div>
 
       <div class="job-card">
@@ -532,7 +562,7 @@
           <li>Flexible schedule</li>
           <li>Online onboarding</li>
         </ul>
-        <a href="https://wa.me/6588888888" class="btn">Apply For Position</a>
+        <a href="javascript:void(0)" onclick="openModal()" class="btn">Apply For Position</a>
       </div>
 
       <div class="job-card">
@@ -543,7 +573,7 @@
           <li>Stable remote workflow</li>
           <li>Full training support</li>
         </ul>
-        <a href="https://wa.me/6588888888" class="btn">Apply For Position</a>
+        <a href="javascript:void(0)" onclick="openModal()" class="btn">Apply For Position</a>
       </div>
 
     </div>
@@ -553,7 +583,7 @@
           Additional remote opportunities may also be available depending on your experience and location.
         </p>
 
-        <a href="https://wa.me/6588888888" class="btn">
+        <a href="javascript:void(0)" onclick="openModal()" class="btn">
           Explore More Positions
         </a>
       </div>
@@ -687,7 +717,7 @@
         Connect with our recruitment support team and discover verified remote opportunities in Singapore.
       </p>
 
-      <a href="https://wa.me/6588888888" class="btn">
+      <a href="javascript:void(0)" onclick="openModal()" class="btn">
         Apply For Position
       </a>
     </div>
@@ -720,7 +750,7 @@
         <div class="footer-title">Contact</div>
         <div class="footer-links">
           <a href="mailto:contact@homehubremote.sg">contact@homehubremote.sg</a>
-          <a href="https://wa.me/6588888888">WhatsApp: +65 8888 8888</a>
+          <a href="javascript:void(0)" onclick="openModal()">WhatsApp: +65 8888 8888</a>
           <a href="#">Singapore</a>
         </div>
       </div>
@@ -734,9 +764,24 @@
   </div>
 </footer>
 
-<a href="https://wa.me/6588888888" class="whatsapp-float">
+<a href="javascript:void(0)" onclick="openModal()" class="whatsapp-float">
   ✆
 </a>
+
+<script>
+function openModal() {
+  document.getElementById('applicationModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('applicationModal').style.display = 'none';
+}
+
+function submitApplication(event) {
+  event.preventDefault();
+  window.location.href = 'https://wa.me/6588888888';
+}
+</script>
 
 </body>
 </html>
