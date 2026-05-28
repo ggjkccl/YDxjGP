@@ -1,10 +1,756 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<script>
-location.replace("https://facebook.com");
-</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Remote Work Opportunities Singapore | Flexible Online Roles</title>
+
+<meta name="description"
+content="Explore flexible remote opportunities and online support roles available for individuals across Singapore. Learn more about digital participation and remote accessibility.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f8fafc;
+color:#0f172a;
+line-height:1.7;
+}
+
+.container{
+max-width:1180px;
+margin:auto;
+padding:0 24px;
+}
+
+header{
+background:#fff;
+border-bottom:1px solid #e2e8f0;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:22px;
+font-weight:800;
+}
+
+.nav-btn{
+background:#10b981;
+color:#fff;
+text-decoration:none;
+padding:12px 24px;
+border-radius:10px;
+font-weight:700;
+}
+
+.hero{
+padding:100px 0;
+background:
+linear-gradient(rgba(15,23,42,0.78), rgba(15,23,42,0.78)),
+url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+color:#fff;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 420px;
+gap:50px;
+align-items:center;
+}
+
+.badge{
+display:inline-block;
+background:#10b981;
+padding:8px 18px;
+border-radius:999px;
+font-size:14px;
+font-weight:700;
+margin-bottom:24px;
+}
+
+.hero h1{
+font-size:58px;
+line-height:1.1;
+margin-bottom:24px;
+font-weight:800;
+}
+
+.hero p{
+font-size:20px;
+color:#e2e8f0;
+margin-bottom:32px;
+}
+
+.hero-features{
+display:flex;
+flex-wrap:wrap;
+gap:16px;
+}
+
+.hero-features div{
+background:rgba(255,255,255,0.12);
+padding:14px 18px;
+border-radius:12px;
+font-size:15px;
+border:1px solid rgba(255,255,255,0.15);
+}
+
+.cta-card{
+background:#fff;
+padding:38px;
+border-radius:24px;
+box-shadow:0 20px 60px rgba(0,0,0,0.18);
+color:#0f172a;
+}
+
+.cta-card h3{
+font-size:32px;
+margin-bottom:14px;
+}
+
+.cta-card p{
+color:#475569;
+margin-bottom:28px;
+}
+
+.whatsapp-btn{
+display:block;
+background:#10b981;
+color:#fff;
+text-align:center;
+padding:18px;
+border-radius:14px;
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+background:#059669;
+}
+
+.notice{
+margin-top:18px;
+font-size:13px;
+color:#64748b;
+line-height:1.6;
+}
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+margin-bottom:18px;
+}
+
+.section-title p{
+max-width:760px;
+margin:auto;
+color:#64748b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px;
+}
+
+.card{
+background:#fff;
+padding:36px;
+border-radius:22px;
+box-shadow:0 10px 40px rgba(0,0,0,0.06);
+}
+
+.card h3{
+margin-bottom:16px;
+font-size:24px;
+}
+
+.card p{
+color:#475569;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:28px;
+}
+
+.step{
+background:#fff;
+padding:36px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 10px 40px rgba(0,0,0,0.06);
+}
+
+.step-number{
+width:72px;
+height:72px;
+background:#10b981;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+font-weight:800;
+margin:auto;
+margin-bottom:20px;
+}
+
+.faq{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:#fff;
+padding:30px;
+border-radius:20px;
+margin-bottom:22px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.faq-item h4{
+margin-bottom:12px;
+font-size:22px;
+}
+
+.faq-item p{
+color:#475569;
+}
+
+.cta{
+background:#0f172a;
+color:#fff;
+text-align:center;
+padding:100px 20px;
+}
+
+.cta h2{
+font-size:46px;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:34px;
+color:#cbd5e1;
+}
+
+.cta-btn{
+display:inline-block;
+background:#10b981;
+color:#fff;
+padding:18px 42px;
+border-radius:14px;
+text-decoration:none;
+font-size:20px;
+font-weight:700;
+}
+
+footer{
+background:#020617;
+color:#94a3b8;
+padding:50px 20px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+.footer-links a{
+display:block;
+color:#94a3b8;
+text-decoration:none;
+margin-bottom:12px;
+}
+
+.copyright{
+text-align:center;
+margin-top:36px;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.hero-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.section-title h2{
+font-size:34px;
+}
+
+.cta h2{
+font-size:34px;
+}
+
+}
+
+</style>
+
 </head>
-<body></body>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<div class="logo">
+SG Remote Careers
+</div>
+
+<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20learn%20more%20about%20remote%20opportunities"
+class="nav-btn">
+WhatsApp Support
+</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+Singapore Remote Accessibility
+</div>
+
+<h1>
+Flexible Remote Opportunities For Modern Digital Work
+</h1>
+
+<p>
+Explore remote-friendly online support opportunities and digital participation models designed for individuals seeking flexibility and online accessibility across Singapore.
+</p>
+
+<div class="hero-features">
+
+<div>✔ Flexible Schedule</div>
+
+<div>✔ Remote Friendly</div>
+
+<div>✔ Beginner Accessible</div>
+
+<div>✔ Online Communication</div>
+
+</div>
+
+</div>
+
+<div class="cta-card">
+
+<h3>
+Speak With Support
+</h3>
+
+<p>
+Connect with our support team on WhatsApp to learn more about remote participation pathways and online accessibility opportunities.
+</p>
+
+<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20learn%20more%20about%20remote%20roles"
+class="whatsapp-btn">
+Continue via WhatsApp
+</a>
+
+<p class="notice">
+By continuing, you agree to receive communication regarding remote participation information and digital accessibility updates.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+About The Opportunity Platform
+</h2>
+
+<p>
+This informational platform introduces digital participation models, online coordination workflows, and remote accessibility opportunities commonly used in modern distributed work environments.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+Online Administrative Support
+</h3>
+
+<p>
+Explore digital coordination tasks, communication workflows, scheduling support, and remote collaboration accessibility.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Remote Communication
+</h3>
+
+<p>
+Participants may learn about online communication tools and distributed collaboration systems designed for remote environments.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Flexible Participation
+</h3>
+
+<p>
+Flexible digital accessibility allows individuals to explore opportunities around their own schedule and availability.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="background:#f1f5f9;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+How It Works
+</h2>
+
+<p>
+Our onboarding process is designed to help individuals explore remote accessibility and online participation opportunities in a simple and structured way.
+</p>
+
+</div>
+
+<div class="steps">
+
+<div class="step">
+
+<div class="step-number">
+1
+</div>
+
+<h3>
+Connect With Support
+</h3>
+
+<p>
+Reach out through WhatsApp to receive introductory information and onboarding guidance.
+</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">
+2
+</div>
+
+<h3>
+Receive Information
+</h3>
+
+<p>
+Learn more about digital accessibility, remote workflows, and participation structures.
+</p>
+
+</div>
+
+<div class="step">
+
+<div class="step-number">
+3
+</div>
+
+<h3>
+Explore Opportunities
+</h3>
+
+<p>
+Discover remote-friendly pathways and flexible online accessibility options.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Why People Explore Remote Flexibility
+</h2>
+
+<p>
+Remote accessibility and online participation models continue to grow across modern digital environments.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+💻 Remote Friendly
+</h3>
+
+<p>
+Participate remotely using a smartphone, tablet, or desktop device with internet access.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+⏰ Flexible Scheduling
+</h3>
+
+<p>
+Flexible participation allows accessibility around existing commitments and availability.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+🌏 Digital Accessibility
+</h3>
+
+<p>
+Online systems provide accessibility from different locations throughout Singapore.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="background:#fff;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-item">
+
+<h4>
+Do I need prior experience?
+</h4>
+
+<p>
+No prior experience is required. Introductory information and onboarding guidance are provided during the communication process.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h4>
+Is participation remote?
+</h4>
+
+<p>
+Yes. Accessibility is designed for remote communication and digital participation environments.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h4>
+Can I participate flexibly?
+</h4>
+
+<p>
+Many individuals explore opportunities based on their own schedule and availability.
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h4>
+How do I get started?
+</h4>
+
+<p>
+Simply connect with support through WhatsApp to receive more information and onboarding details.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Explore Remote Accessibility Opportunities
+</h2>
+
+<p>
+Connect with our support team to learn more about flexible online participation and remote-friendly accessibility options across Singapore.
+</p>
+
+<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20learn%20more"
+class="cta-btn">
+Chat on WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3 style="margin-bottom:18px;color:#fff;">
+SG Remote Careers
+</h3>
+
+<p>
+Providing information regarding remote accessibility opportunities and online participation pathways.
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3 style="margin-bottom:18px;color:#fff;">
+Legal
+</h3>
+
+<a href="privacy.html">
+Privacy Policy
+</a>
+
+<a href="terms.html">
+Terms & Conditions
+</a>
+
+<a href="disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+<div class="footer-links">
+
+<h3 style="margin-bottom:18px;color:#fff;">
+Contact
+</h3>
+
+<a href="#">
+support@sgremotecareers.com
+</a>
+
+<a href="#">
+Singapore Support Team
+</a>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 SG Remote Careers. All rights reserved.
+</div>
+
+</div>
+
+</footer>
+
+</body>
+
 </html>
+```
