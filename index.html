@@ -1,1031 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Singapore Remote Careers | Flexible Online Opportunities</title>
-
-<meta name="description"
-content="Explore flexible remote-friendly opportunities across Singapore with beginner-friendly onboarding, online accessibility, and structured remote communication support.">
-
-<meta name="keywords"
-content="Singapore remote jobs, remote opportunities Singapore, flexible online work Singapore, remote-friendly careers, online coordination jobs Singapore">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:'Inter',sans-serif;
-background:#f8fafc;
-color:#0f172a;
-line-height:1.6;
-overflow-x:hidden;
-}
-
-.container{
-max-width:1180px;
-margin:auto;
-padding:0 24px;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:999;
-background:rgba(15,23,42,0.92);
-backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(255,255,255,0.08);
-}
-
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0;
-}
-
-.logo{
-font-size:24px;
-font-weight:800;
-color:#fff;
-letter-spacing:-0.5px;
-}
-
-.nav-links{
-display:flex;
-align-items:center;
-gap:28px;
-}
-
-.nav-links a{
-color:#cbd5e1;
-text-decoration:none;
-font-size:15px;
-font-weight:600;
-transition:0.3s;
-}
-
-.nav-links a:hover{
-color:#fff;
-}
-
-.nav-btn{
-background:#10b981;
-color:#fff;
-text-decoration:none;
-padding:13px 24px;
-border-radius:14px;
-font-weight:800;
-transition:0.3s;
-box-shadow:0 10px 30px rgba(16,185,129,0.35);
-}
-
-.nav-btn:hover{
-background:#059669;
-transform:translateY(-2px);
-}
-
-.hero{
-padding:180px 0 120px;
-background:
-linear-gradient(rgba(2,6,23,0.72), rgba(2,6,23,0.82)),
-url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1800&auto=format&fit=crop') center/cover no-repeat;
-color:#fff;
-position:relative;
-}
-
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 430px;
-gap:60px;
-align-items:center;
-}
-
-.badge{
-display:inline-flex;
-align-items:center;
-gap:10px;
-background:rgba(16,185,129,0.12);
-border:1px solid rgba(16,185,129,0.35);
-padding:11px 18px;
-border-radius:999px;
-font-size:14px;
-font-weight:700;
-color:#6ee7b7;
-margin-bottom:28px;
-}
-
-.badge::before{
-content:'';
-width:10px;
-height:10px;
-border-radius:50%;
-background:#10b981;
-}
-
-.hero h1{
-font-size:66px;
-line-height:1.04;
-font-weight:800;
-margin-bottom:26px;
-max-width:760px;
-letter-spacing:-2px;
-}
-
-.hero p{
-font-size:21px;
-color:#e2e8f0;
-margin-bottom:38px;
-max-width:700px;
-}
-
-.hero-features{
-display:flex;
-flex-wrap:wrap;
-gap:16px;
-}
-
-.hero-features div{
-background:rgba(255,255,255,0.08);
-border:1px solid rgba(255,255,255,0.1);
-padding:16px 18px;
-border-radius:16px;
-font-size:15px;
-backdrop-filter:blur(4px);
-}
-
-.cta-card{
-background:#fff;
-border-radius:30px;
-padding:40px;
-box-shadow:0 25px 80px rgba(0,0,0,0.35);
-position:relative;
-overflow:hidden;
-}
-
-.cta-card::before{
-content:'';
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:6px;
-background:#10b981;
-}
-
-.online-status{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:14px;
-font-weight:700;
-color:#10b981;
-margin-bottom:20px;
-}
-
-.online-dot{
-width:10px;
-height:10px;
-background:#10b981;
-border-radius:50%;
-animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-0%{opacity:1;}
-50%{opacity:0.4;}
-100%{opacity:1;}
-}
-
-.cta-card h3{
-font-size:34px;
-margin-bottom:14px;
-line-height:1.2;
-}
-
-.cta-card p{
-color:#475569;
-margin-bottom:26px;
-}
-
-.info-box{
-background:#f8fafc;
-border:1px solid #e2e8f0;
-padding:20px;
-border-radius:18px;
-margin-bottom:26px;
-}
-
-.info-row{
-display:flex;
-justify-content:space-between;
-margin-bottom:14px;
-font-size:15px;
-}
-
-.info-row:last-child{
-margin-bottom:0;
-}
-
-.info-label{
-color:#64748b;
-}
-
-.info-value{
-font-weight:800;
-color:#0f172a;
-}
-
-.whatsapp-btn{
-display:block;
-width:100%;
-background:#10b981;
-color:#fff;
-text-align:center;
-padding:20px;
-border-radius:16px;
-text-decoration:none;
-font-size:20px;
-font-weight:800;
-transition:0.3s;
-box-shadow:0 12px 30px rgba(16,185,129,0.35);
-}
-
-.whatsapp-btn:hover{
-background:#059669;
-transform:translateY(-2px);
-}
-
-.small-note{
-margin-top:18px;
-font-size:13px;
-line-height:1.6;
-color:#64748b;
-}
-
-.trust-bar{
-background:#fff;
-padding:28px 0;
-border-bottom:1px solid #e2e8f0;
-}
-
-.trust-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:24px;
-}
-
-.trust-item{
-text-align:center;
-font-weight:700;
-color:#334155;
-}
-
-.section{
-padding:100px 0;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:60px;
-}
-
-.section-title h2{
-font-size:48px;
-margin-bottom:16px;
-letter-spacing:-1px;
-}
-
-.section-title p{
-max-width:760px;
-margin:auto;
-color:#64748b;
-font-size:18px;
-}
-
-.jobs{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px;
-}
-
-.job-card{
-background:#fff;
-padding:38px;
-border-radius:28px;
-box-shadow:0 15px 50px rgba(0,0,0,0.06);
-border:1px solid #e2e8f0;
-transition:0.3s;
-}
-
-.job-card:hover{
-transform:translateY(-6px);
-}
-
-.job-top{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:22px;
-}
-
-.job-badge{
-background:#ecfdf5;
-color:#059669;
-padding:8px 14px;
-border-radius:999px;
-font-size:13px;
-font-weight:800;
-}
-
-.job-status{
-font-size:14px;
-font-weight:700;
-color:#0f172a;
-}
-
-.job-card h3{
-font-size:28px;
-margin-bottom:16px;
-}
-
-.job-card p{
-color:#475569;
-margin-bottom:22px;
-}
-
-.job-card ul{
-padding-left:18px;
-margin-bottom:28px;
-}
-
-.job-card li{
-margin-bottom:10px;
-color:#334155;
-}
-
-.job-btn{
-display:inline-block;
-background:#0f172a;
-color:#fff;
-padding:15px 24px;
-border-radius:14px;
-text-decoration:none;
-font-weight:700;
-transition:0.3s;
-}
-
-.job-btn:hover{
-background:#111827;
-}
-
-.process{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.process-card{
-background:#fff;
-padding:40px;
-border-radius:26px;
-text-align:center;
-box-shadow:0 15px 50px rgba(0,0,0,0.06);
-}
-
-.process-number{
-width:76px;
-height:76px;
-background:#10b981;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-font-weight:800;
-margin:auto;
-margin-bottom:20px;
-}
-
-.process-card h3{
-font-size:24px;
-margin-bottom:14px;
-}
-
-.process-card p{
-color:#475569;
-}
-
-.faq{
-max-width:920px;
-margin:auto;
-}
-
-.faq-item{
-background:#fff;
-padding:34px;
-border-radius:24px;
-margin-bottom:22px;
-box-shadow:0 10px 35px rgba(0,0,0,0.05);
-}
-
-.faq-item h4{
-font-size:24px;
-margin-bottom:12px;
-}
-
-.faq-item p{
-color:#475569;
-}
-
-.cta{
-background:#020617;
-color:#fff;
-text-align:center;
-padding:110px 20px;
-}
-
-.cta h2{
-font-size:54px;
-margin-bottom:22px;
-}
-
-.cta p{
-max-width:760px;
-margin:auto;
-margin-bottom:38px;
-font-size:20px;
-color:#cbd5e1;
-}
-
-.cta-btn{
-display:inline-block;
-background:#10b981;
-color:#fff;
-padding:20px 42px;
-border-radius:16px;
-text-decoration:none;
-font-size:22px;
-font-weight:800;
-box-shadow:0 12px 30px rgba(16,185,129,0.3);
-}
-
-footer{
-background:#000;
-color:#94a3b8;
-padding:70px 20px;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-}
-
-.footer-links a{
-display:block;
-color:#94a3b8;
-text-decoration:none;
-margin-bottom:12px;
-}
-
-.footer-title{
-margin-bottom:20px;
-color:#fff;
-font-size:20px;
-}
-
-.copyright{
-margin-top:40px;
-padding-top:30px;
-border-top:1px solid rgba(255,255,255,0.08);
-text-align:center;
-font-size:14px;
-}
-
-@media(max-width:900px){
-
-.hero{
-padding-top:140px;
-}
-
-.hero-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:44px;
-letter-spacing:-1px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.trust-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.section-title h2{
-font-size:36px;
-}
-
-.cta h2{
-font-size:38px;
-}
-
-.nav-links{
-display:none;
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Freedom | Remote Jobs in Singapore</title>
+  <meta name="description" content="Explore flexible remote job opportunities in Singapore. Discover verified work from home roles including customer support, virtual assistant, remote admin and data entry positions." />
+  <meta name="keywords" content="Singapore remote jobs, work from home Singapore, remote customer support, virtual assistant Singapore, flexible jobs Singapore" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(13, 24, 45, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 999;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #d1d5db;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      display: inline-block;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(18, 140, 126, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background:
+      linear-gradient(rgba(10,20,40,0.75), rgba(10,20,40,0.8)),
+      url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      padding-top: 100px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #dbe3ee;
+      margin-bottom: 32px;
+      max-width: 650px;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 35px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .apply-card {
+      background: #fff;
+      border-radius: 24px;
+      padding: 35px;
+      color: #1f2937;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+
+    .apply-card h3 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .apply-card p {
+      color: #6b7280;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ff7a18, #ff4d4d);
+      color: #fff;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .mini-text {
+      font-size: 12px;
+      color: #9ca3af;
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    .section-title p {
+      color: #6b7280;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .job-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+      transition: 0.3s;
+    }
+
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-card h3 {
+      margin-bottom: 14px;
+      font-size: 24px;
+    }
+
+    .job-card ul {
+      padding-left: 18px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    .salary {
+      color: #16a34a;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+    }
+
+    .why-card h4 {
+      font-size: 22px;
+      margin: 18px 0;
+    }
+
+    .steps {
+      background: #0f172a;
+      color: #fff;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .step-box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .step-number {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 18px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #fff;
+      text-align: center;
+      border-radius: 30px;
+      padding: 70px 40px;
+    }
+
+    .cta h2 {
+      font-size: 46px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #0b1220;
+      color: #cbd5e1;
+      padding: 70px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-title {
+      color: #fff;
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .footer-links a {
+      display: block;
+      margin-bottom: 12px;
+      color: #cbd5e1;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 25px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      background: #25d366;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 30px;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    @media(max-width: 991px) {
+      .hero-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section-title h2,
+      .cta h2 {
+        font-size: 34px;
+      }
+    }
+
+    @media(max-width: 640px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .apply-card {
+        padding: 25px;
+      }
+
+      .section-title h2,
+      .cta h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
+  <div class="container nav">
+    <div class="logo">Homehubremote</div>
 
-<div class="container nav">
-
-<div class="logo">
-SG Remote Careers
-</div>
-
-<div class="nav-links">
-<a href="#jobs">Jobs</a>
-<a href="#process">Process</a>
-<a href="#faq">FAQs</a>
-</div>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20learn%20more%20about%20remote%20roles%20in%20Singapore"
-class="nav-btn">
-Apply on WhatsApp
-</a>
-
-</div>
-
+    <div class="nav-links">
+      <a href="#jobs">Jobs</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#steps">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/6588888888" class="btn">Apply Now</a>
+    </div>
+  </div>
 </header>
 
 <section class="hero">
+  <div class="container hero-grid">
 
-<div class="container hero-grid">
+    <div>
+      <div class="hero-badges">
+        <div class="badge">Singapore Remote Jobs</div>
+        <div class="badge">Flexible Schedule</div>
+        <div class="badge">Verified Opportunities</div>
+      </div>
 
-<div>
+      <h1>
+        Start Your Remote Career From Anywhere In Singapore
+      </h1>
 
-<div class="badge">
-Currently Reviewing Applications In Singapore
-</div>
+      <p>
+        Discover flexible work from home opportunities with trusted companies hiring in Singapore. Apply online and connect directly through WhatsApp.
+      </p>
 
-<h1>
-Flexible Remote Opportunities Across Singapore
-</h1>
+      <a href="https://wa.me/6588888888" class="btn">
+        Chat With Recruiter
+      </a>
+    </div>
 
-<p>
-Explore remote-friendly online opportunities with flexible scheduling, beginner-friendly onboarding, and structured digital communication support designed for Singapore residents.
-</p>
+    <div class="apply-card">
+      <h3>Quick Application</h3>
+      <p>Submit your details and our recruitment team will contact you through WhatsApp.</p>
 
-<div class="hero-features">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" required>
+        </div>
 
-<div>✔ Remote-Friendly Roles</div>
+        <div class="form-group">
+          <input type="tel" placeholder="WhatsApp Number" required>
+        </div>
 
-<div>✔ Flexible Scheduling</div>
+        <div class="form-group">
+          <select>
+            <option>Select Preferred Position</option>
+            <option>Customer Support</option>
+            <option>Virtual Assistant</option>
+            <option>Remote Admin</option>
+            <option>Data Entry</option>
+          </select>
+        </div>
 
-<div>✔ Online Communication</div>
+        <button type="submit" class="submit-btn">
+          Apply Now
+        </button>
 
-<div>✔ Beginner Accessible</div>
+        <div class="mini-text">
+          By submitting, you agree to our Terms & Privacy Policy.
+        </div>
+      </form>
+    </div>
 
-</div>
-
-</div>
-
-<div class="cta-card">
-
-<div class="online-status">
-
-<div class="online-dot"></div>
-
-Recruitment Team Online
-
-</div>
-
-<h3>
-Current Open Positions
-</h3>
-
-<p>
-Applications are currently open for remote-friendly support and online coordination opportunities across Singapore.
-</p>
-
-<div class="info-box">
-
-<div class="info-row">
-<div class="info-label">Location</div>
-<div class="info-value">Singapore</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">Work Structure</div>
-<div class="info-value">Flexible Remote</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">Onboarding</div>
-<div class="info-value">Beginner Friendly</div>
-</div>
-
-<div class="info-row">
-<div class="info-label">Communication</div>
-<div class="info-value">WhatsApp Support</div>
-</div>
-
-</div>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20continue%20my%20application"
-class="whatsapp-btn">
-Continue Application
-</a>
-
-<p class="small-note">
-Remote opportunities may vary depending on availability and onboarding review. This website provides information regarding flexible remote accessibility pathways.
-</p>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<section class="trust-bar">
+<section id="jobs">
+  <div class="container">
 
-<div class="container trust-grid">
+    <div class="section-title">
+      <h2>Popular Remote Positions</h2>
+      <p>
+        Flexible opportunities suitable for professionals, students, freelancers and individuals seeking work from home options in Singapore.
+      </p>
+    </div>
 
-<div class="trust-item">
-✔ Flexible Online Access
-</div>
+    <div class="jobs-grid">
 
-<div class="trust-item">
-✔ Singapore-Based Support
-</div>
+      <div class="job-card">
+        <h3>Customer Support</h3>
+        <div class="salary">SGD 2,500 - SGD 4,200 / month</div>
+        <ul>
+          <li>Remote communication support</li>
+          <li>Flexible working hours</li>
+          <li>Training provided</li>
+        </ul>
+        <a href="https://wa.me/6588888888" class="btn">Apply</a>
+      </div>
 
-<div class="trust-item">
-✔ Remote Communication
-</div>
+      <div class="job-card">
+        <h3>Virtual Assistant</h3>
+        <div class="salary">SGD 3,000 - SGD 5,000 / month</div>
+        <ul>
+          <li>Email and schedule management</li>
+          <li>Remote admin support</li>
+          <li>Work from home</li>
+        </ul>
+        <a href="https://wa.me/6588888888" class="btn">Apply</a>
+      </div>
 
-<div class="trust-item">
-✔ Structured Onboarding
-</div>
+      <div class="job-card">
+        <h3>Remote Data Entry</h3>
+        <div class="salary">SGD 2,200 - SGD 3,800 / month</div>
+        <ul>
+          <li>Basic computer skills required</li>
+          <li>Flexible schedule</li>
+          <li>Online onboarding</li>
+        </ul>
+        <a href="https://wa.me/6588888888" class="btn">Apply</a>
+      </div>
 
-</div>
+      <div class="job-card">
+        <h3>Content Moderator</h3>
+        <div class="salary">SGD 3,200 - SGD 4,800 / month</div>
+        <ul>
+          <li>Review digital content</li>
+          <li>Stable remote workflow</li>
+          <li>Full training support</li>
+        </ul>
+        <a href="https://wa.me/6588888888" class="btn">Apply</a>
+      </div>
 
+    </div>
+
+  </div>
 </section>
 
-<section class="section" id="jobs">
+<section id="benefits">
+  <div class="container">
 
-<div class="container">
+    <div class="section-title">
+      <h2>Why People Choose Homehubremote</h2>
+      <p>
+        Designed for professionals in Singapore looking for flexibility, convenience and verified remote opportunities.
+      </p>
+    </div>
 
-<div class="section-title">
+    <div class="why-grid">
 
-<h2>
-Featured Remote Opportunities
-</h2>
+      <div class="why-card">
+        <h4>Flexible Schedule</h4>
+        <p>Choose working hours that fit your lifestyle and daily routine.</p>
+      </div>
 
-<p>
-Explore remote-friendly openings designed around flexible scheduling, online communication, and digital accessibility.
-</p>
+      <div class="why-card">
+        <h4>Remote Friendly</h4>
+        <p>Work from home, coworking spaces or anywhere with internet access.</p>
+      </div>
 
-</div>
+      <div class="why-card">
+        <h4>Singapore Opportunities</h4>
+        <p>Access remote openings suitable for Singapore-based applicants.</p>
+      </div>
 
-<div class="jobs">
+      <div class="why-card">
+        <h4>Simple Application</h4>
+        <p>Connect directly with our recruitment support team via WhatsApp.</p>
+      </div>
 
-<div class="job-card">
+    </div>
 
-<div class="job-top">
-<div class="job-badge">Part-Time</div>
-<div class="job-status">Open Today</div>
-</div>
-
-<h3>
-Remote Support Assistant
-</h3>
-
-<p>
-Assist with online coordination workflows and communication accessibility within remote digital environments.
-</p>
-
-<ul>
-<li>Flexible scheduling structure</li>
-<li>Remote online communication</li>
-<li>Beginner-friendly onboarding</li>
-<li>Digital accessibility support</li>
-</ul>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20am%20interested%20in%20the%20Remote%20Support%20Assistant%20role"
-class="job-btn">
-Apply via WhatsApp
-</a>
-
-</div>
-
-<div class="job-card">
-
-<div class="job-top">
-<div class="job-badge">Remote</div>
-<div class="job-status">Flexible Access</div>
-</div>
-
-<h3>
-Digital Coordination Assistant
-</h3>
-
-<p>
-Participate in remote-friendly communication workflows and support digital coordination accessibility.
-</p>
-
-<ul>
-<li>Structured onboarding process</li>
-<li>Flexible remote participation</li>
-<li>Online communication tools</li>
-<li>Digital workflow support</li>
-</ul>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20am%20interested%20in%20the%20Digital%20Coordination%20Assistant%20role"
-class="job-btn">
-Apply via WhatsApp
-</a>
-
-</div>
-
-<div class="job-card">
-
-<div class="job-top">
-<div class="job-badge">Flexible</div>
-<div class="job-status">Remote Friendly</div>
-</div>
-
-<h3>
-Online Communication Support
-</h3>
-
-<p>
-Support online communication accessibility and remote coordination systems through digital platforms.
-</p>
-
-<ul>
-<li>Flexible online accessibility</li>
-<li>Remote communication structure</li>
-<li>Beginner-accessible guidance</li>
-<li>Digital workflow coordination</li>
-</ul>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20am%20interested%20in%20the%20Online%20Communication%20Support%20role"
-class="job-btn">
-Apply via WhatsApp
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<section class="section" id="process" style="background:#f1f5f9;">
+<section class="steps" id="steps">
+  <div class="container">
 
-<div class="container">
+    <div class="section-title">
+      <h2 style="color:#fff;">How To Start</h2>
+      <p style="color:#cbd5e1;">
+        Our process is simple, fast and beginner friendly.
+      </p>
+    </div>
 
-<div class="section-title">
+    <div class="steps-grid">
 
-<h2>
-How The Application Process Works
-</h2>
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <h3>Submit Application</h3>
+        <p>Fill out the quick application form with your contact details.</p>
+      </div>
 
-<p>
-Our onboarding structure is designed to provide clear communication and beginner-friendly accessibility throughout the application process.
-</p>
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <h3>WhatsApp Review</h3>
+        <p>Our recruitment team will contact you through WhatsApp.</p>
+      </div>
 
-</div>
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <h3>Choose Position</h3>
+        <p>Select a suitable remote opportunity based on your experience.</p>
+      </div>
 
-<div class="process">
+      <div class="step-box">
+        <div class="step-number">4</div>
+        <h3>Start Working</h3>
+        <p>Complete onboarding and begin your remote work journey.</p>
+      </div>
 
-<div class="process-card">
+    </div>
 
-<div class="process-number">
-1
-</div>
-
-<h3>
-Submit Your Interest
-</h3>
-
-<p>
-Connect with the recruitment team through WhatsApp to receive introductory information.
-</p>
-
-</div>
-
-<div class="process-card">
-
-<div class="process-number">
-2
-</div>
-
-<h3>
-Review & Guidance
-</h3>
-
-<p>
-Receive onboarding guidance, communication details, and remote accessibility information.
-</p>
-
-</div>
-
-<div class="process-card">
-
-<div class="process-number">
-3
-</div>
-
-<h3>
-Explore Opportunities
-</h3>
-
-<p>
-Discover flexible online participation pathways based on availability and accessibility.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<section class="section" id="faq">
+<section id="reviews">
+  <div class="container">
 
-<div class="container">
+    <div class="section-title">
+      <h2>What Applicants Say</h2>
+      <p>
+        Feedback from people who explored remote opportunities through Homehubremote.
+      </p>
+    </div>
 
-<div class="section-title">
+    <div class="testimonial-grid">
 
-<h2>
-Frequently Asked Questions
-</h2>
+      <div class="testimonial">
+        <p>
+          “The application process was simple and I received a WhatsApp response within the same day.”
+        </p>
+        <strong>— Amanda T., Singapore</strong>
+      </div>
 
-</div>
+      <div class="testimonial">
+        <p>
+          “I was looking for flexible work options and found a remote admin role that suited my schedule.”
+        </p>
+        <strong>— Daniel L., Singapore</strong>
+      </div>
 
-<div class="faq">
+      <div class="testimonial">
+        <p>
+          “Very beginner friendly and the recruiter explained the process clearly through WhatsApp.”
+        </p>
+        <strong>— Cheryl N., Singapore</strong>
+      </div>
 
-<div class="faq-item">
+    </div>
 
-<h4>
-Do I need previous experience?
-</h4>
-
-<p>
-No prior experience is required. Beginner-friendly onboarding and communication guidance are available.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h4>
-Is this remote accessible?
-</h4>
-
-<p>
-Yes. Opportunities are designed around online accessibility and remote-friendly communication systems.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h4>
-Can I participate flexibly?
-</h4>
-
-<p>
-Many individuals explore opportunities based on their own scheduling preferences and availability.
-</p>
-
-</div>
-
-<div class="faq-item">
-
-<h4>
-Is income guaranteed?
-</h4>
-
-<p>
-No. Participation opportunities and accessibility may vary depending on availability, onboarding review, and individual circumstances.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
-<section class="cta">
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>Ready To Explore Remote Work?</h2>
+      <p style="margin-bottom:30px;color:#dbeafe;">
+        Connect with our recruitment support team and discover verified remote opportunities in Singapore.
+      </p>
 
-<h2>
-Start Your Singapore Remote Application
-</h2>
-
-<p>
-Connect with the onboarding team to learn more about currently available remote-friendly opportunities across Singapore.
-</p>
-
-<a href="https://wa.me/6581234567?text=Hello%20I%20would%20like%20to%20start%20my%20application"
-class="cta-btn">
-Apply on WhatsApp
-</a>
-
+      <a href="https://wa.me/6588888888" class="btn">
+        Apply Through WhatsApp
+      </a>
+    </div>
+  </div>
 </section>
 
-<footer>
+<footer id="contact">
+  <div class="container">
 
-<div class="container">
+    <div class="footer-grid">
 
-<div class="footer-grid">
+      <div>
+        <div class="footer-title">Homehubremote</div>
+        <p>
+          Helping Singapore applicants discover flexible remote work opportunities with a simple online application process.
+        </p>
+      </div>
 
-<div>
+      <div>
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="#jobs">Jobs Available</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#steps">How To Start</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+      </div>
 
-<h3 class="footer-title">
-SG Remote Careers
-</h3>
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-links">
+          <a href="mailto:contact@homehubremote.sg">contact@homehubremote.sg</a>
+          <a href="https://wa.me/6588888888">WhatsApp: +65 8888 8888</a>
+          <a href="#">Singapore</a>
+        </div>
+      </div>
 
-<p>
-Providing information regarding remote-friendly online accessibility opportunities and structured onboarding pathways in Singapore.
-</p>
+    </div>
 
-</div>
+    <div class="copyright">
+      Copyright © 2026 Homehubremote. All Rights Reserved.
+    </div>
 
-<div class="footer-links">
-
-<h3 class="footer-title">
-Legal
-</h3>
-
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms & Conditions</a>
-<a href="cookies.html">Cookie Policy</a>
-<a href="disclaimer.html">Disclaimer</a>
-
-</div>
-
-<div class="footer-links">
-
-<h3 class="footer-title">
-Contact
-</h3>
-
-<a href="#">support@sgremotecareers.com</a>
-<a href="#">Singapore Recruitment Support</a>
-<a href="#">10 Anson Road, Singapore</a>
-
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 SG Remote Careers. All rights reserved.
-</div>
-
-</div>
-
+  </div>
 </footer>
 
-</body>
+<a href="https://wa.me/6588888888" class="whatsapp-float">
+  ✆
+</a>
 
+</body>
 </html>
-```
